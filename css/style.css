@@ -1,0 +1,451 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor_padre{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.menu{
+    width: 16%;
+    height: 100%;    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_instagram{
+    width: 100%;
+    height: 14vh;
+}
+.imagen_logo{
+    padding-left: 5%;
+    padding-top: 9%;
+    width: 50%;
+    height: 75%;
+    
+}
+
+.menu_nav{
+    display: flex;
+}
+
+.iconos{
+    width: 20%;
+    padding-left: 7%;
+    height: 81vh;
+}
+
+.imagen_iconos{
+    width: 100%;
+    height: 100%;
+}
+
+.menu_a{
+    width: 80%;
+    padding-left: 5%;
+}
+
+
+#inicio_instagram{
+    width: 80%;
+    height: 6vh;
+    padding-top: 6%;
+}
+
+#buscar_instagram{
+    width: 80%;
+    height: 6vh;
+    padding-top: 12%;
+}
+
+#explorar_instagram{
+    width: 80%;
+    height: 6vh;
+    padding-top: 20%;
+}
+
+#reels_instagram{
+    width: 100%;
+    height: 6vh;
+    padding-top: 28%;
+}
+
+#mensajes_instagram{
+    width: 100%;
+    height: 6vh;
+    padding-top: 30%;
+}
+
+#notificaciones_instagram{
+    width: 100%;
+    height: 6vh;
+    padding-top: 30%;
+}
+
+#crear_instagram{
+    width: 100%;
+    height: 6vh;
+    padding-top: 30%;
+}
+
+#perfil_instagram{
+    width: 100%;
+    height: 16.5vh;
+    padding-top: 30%;
+}
+
+#mas_instagram{
+    width: 100%;
+    height: 5vh;
+    padding-top: 36%;
+} 
+
+.a_navegacion{
+    font-size: 15px;
+}
+
+.separador{
+    width: 0.1%;
+    background-color: rgb(34, 34, 34);
+}
+.seccion{
+    width: 84%;
+    height: 100%;
+    overflow: auto;
+}
+
+.perfil{
+    display: flex;
+    width: 73%;
+    margin: auto;
+}
+
+.div_imagen_perfil{
+    width: 32%;
+    height: 20%;
+    margin-top: 3%;
+    
+}
+.imagen_perfil{
+    width: 100%;
+    height: 100%;
+}
+
+.div_nombre{
+    width: 60%;
+    height: 20%;
+    margin-top: 3%;
+    padding-left: 2%;
+}
+
+.div_arriba_nombre{
+    display: flex;
+
+}
+
+#nombre{
+    display: flex;
+    padding-top: 1%;
+    font-size: 20px;
+}
+
+#img_verificado{
+    margin-top: 2%;
+    height: 40%;
+
+}
+
+.boton_seguir{
+    margin-top: 0.8%;
+    margin-left: 2.3%;
+}
+.boton_enviarmensaje{
+    margin-top: 0.8%;
+    margin-left: 2.3%;
+}
+
+
+.agregar{
+    margin-top: 0.8%;
+    margin-left: 1.5%;
+    width: 6%;
+    height: 4.6vh;
+    text-align: center;
+    padding-top: 0.5%;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    
+}
+
+.agregar:hover {
+    background-color: #212121; /* Color de fondo al pasar el mouse */
+  }
+
+.trespuntos{
+    margin-left: 2%;
+    width: 5%;
+    height: 5vh;
+    padding-top: 0.8%;
+}
+
+.div_seguidores{
+    display: flex;
+    margin-top: 1.5%;
+    width: 100%;
+    font-size: 16px;
+}
+.publicaciones{
+    width: 30%;
+}
+
+.seguidores{
+    margin-left: 3.5%;
+    width: 30%;
+}
+
+#nombre_completo{
+    font-size: 13px;
+    margin-bottom: 0%;
+}
+
+#deportista{
+    font-size: 14px;
+    color: grey;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.texto{
+    font-size: 13px;
+    font-family: Arial, sans-serif;  
+    margin-top: 0%;
+    margin-bottom: 0%; 
+}
+
+.seccionimagenes{
+    width: 73%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.separador2{
+    width: 100%;
+    height: 0.1vh;
+    background-color: rgb(34, 34, 34);
+}
+
+.div_titulos{
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.titulos{
+    display: flex;
+    height: 3.8vh;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    
+}
+
+.imageneslogo{
+    width: 100%;
+    height: 70%;
+}
+
+.imageneslogo2{
+    width: 100%;
+    height: 80%;
+}
+
+.galeria{
+    margin: auto;
+    margin-bottom: 3%;
+    width: 73%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 0.5%;
+}
+
+.imagen_galeria{
+    width: 100%;
+    width: 100%;
+}
+
+.imagen_1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen_1::after {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../img/hoverimg1.png);
+    background-size: 100%;
+}
+  
+.imagen_1:hover::after {
+    display: block;
+    top: 0%;
+    right: 0%;
+}
+
+.imagen_2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen_2::after {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../img/hoverimg2.png);
+    background-size: 100%;
+}
+  
+.imagen_2:hover::after {
+    display: block;
+    top: 0%;
+    right: 0%;
+}
+
+.imagen_3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen_3::after {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../img/hoverimg3.png);
+    background-size: 100%;
+}
+  
+.imagen_3:hover::after {
+    display: block;
+    top: 0%;
+    right: 0%;
+}
+
+.imagen_4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen_4::after {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../img/hoverimg4.png);
+    background-size: 100%;
+}
+  
+.imagen_4:hover::after {
+    display: block;
+    top: 0%;
+    right: 0%;
+}
+
+.imagen_5{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen_5::after {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../img/hoverimg5.png);
+    background-size: 100%;
+}
+  
+.imagen_5:hover::after {
+    display: block;
+    top: 0%;
+    right: 0%;
+}
+
+.imagen_6{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen_6::after {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../img/hoverimg6.png);
+    background-size: 100%;
+}
+  
+.imagen_6:hover::after {
+    display: block;
+    top: 0%;
+    right: 0%;
+}
+
+
+footer{
+    margin: auto;
+    width: 73%;
+    height: 20vh;
+    font-size: 12px;
+    color: gray;
+}
+
+.footer_1{
+    display: flex;
+    gap: 1.6%;
+    padding-top: 2%;
+}
+
+.footer_2{
+    display: flex;
+    gap: 1.6%;
+    margin: auto;
+    width: 40%;
+    justify-content: center;
+    padding-top: 2%;
+    gap: 5%;
+}
+
+.a_footer{
+    text-decoration: none;
+    color: gray;
+}
+
